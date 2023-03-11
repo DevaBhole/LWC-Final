@@ -1,0 +1,18 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+
+<template>
+   <!-- <c-objects-selection onnewcustomevent={handleCustomEvent}></c-objects-selection>-->
+   <lightning-card>
+    <div class="left">
+       <lightning-checkbox-group name="fields" options={objectFields} value={objectFields} onchange={selectedFields}></lightning-checkbox-group>
+       <lightning-button value="Get Records" label="Get Records" onclick={getRecords}></lightning-button>
+    </div>
+    </lightning-card>
+    
+    <div class="right">
+   <lightning-card>
+    <c-display-records selected-final-field={selectedFinalField} columns-name={columnsName}></c-display-records>
+   </lightning-card>
+</div>
+</template>

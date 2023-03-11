@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card if:true={gotTheRecords}>
+    <div class="right">
+        <lightning-datatable     
+            key-field="Id"
+            data={recordsFet} 
+            columns={columnsName} >
+        </lightning-datatable>
+     </div>
+    </lightning-card>
+</template>
